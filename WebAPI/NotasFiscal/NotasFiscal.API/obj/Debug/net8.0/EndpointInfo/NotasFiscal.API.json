@@ -1,0 +1,32 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "NotasFiscal.API",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/NotaFiscal/notas-por-mes": {
+      "get": {
+        "tags": [
+          "NotaFiscal"
+        ],
+        "parameters": [
+          {
+            "name": "mes",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

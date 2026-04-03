@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "NotasFiscal.API.Controllers.NotaFiscalController",
+    "Method": "BuscarNotaFiscalPorMes",
+    "RelativePath": "api/NotaFiscal/notas-por-mes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mes",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

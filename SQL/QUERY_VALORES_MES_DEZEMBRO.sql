@@ -1,0 +1,10 @@
+
+-- Query para retorno valor total e total de produtos vendidos no mês de dezembro.
+
+SELECT 
+  SUM(NFI.VALORTOTAL) AS VALOR_TOTAL,
+  SUM(NFI.QTDE) AS TOTAL_PRODUTOS
+  FROM NOTAFISCAL NF
+  INNER JOIN NOTAFISCALITENS NFI
+       ON NF.CODNOTA = NFI.CODNOTA
+	WHERE MONTH(NF.DTEMISSAO) = 12
